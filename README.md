@@ -1,8 +1,6 @@
 The String Gear
 ================================================================================
-[![Build Status](https://travis-ci.org/phpgearbox/string.svg?branch=master)](https://travis-ci.org/phpgearbox/string)
-[![Latest Stable Version](https://poser.pugx.org/gears/string/v/stable.svg)](https://packagist.org/packages/gears/string)
-[![Total Downloads](https://poser.pugx.org/gears/string/downloads.svg)](https://packagist.org/packages/gears/string)
+[![Build Status](https://travis-ci.com/hejingyuan199/string.svg)](https://travis-ci.com/hejingyuan199/string)
 [![License](https://poser.pugx.org/gears/string/license.svg)](https://packagist.org/packages/gears/string)
 
 A collection of basic string manipulation functions.
@@ -143,4 +141,5 @@ https://github.com/laravel/framework/blob/4.2/src/Illuminate/Support/Str.php
 
 --------------------------------------------------------------------------------
 Developed by Brad Jones - brad@bjc.id.au
+This is forked from https://github.com/daniel-hocking/string
 Now this one maintained by Jingyuan He - hejingyuan199@gmail.com
