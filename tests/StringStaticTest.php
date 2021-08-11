@@ -11,9 +11,10 @@
 // -----------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////
 
-use Gears\String as Str;
+use Gears\Str;
+use PHPUnit\Framework\TestCase;
 
-class StringStaticTest extends PHPUnit_Framework_TestCase
+class StringStaticTest extends TestCase
 {
 	protected $string = 'This is a string.';
 

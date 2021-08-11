@@ -22,7 +22,7 @@ Installation via composer is easy:
 	"repositories": [
       {
           "type": "vcs",
-          "url": "https://github.com/daniel-hocking/string"
+          "url": "https://github.com/hejingyuan199/string"
       }
   ],
   "require": {
@@ -143,3 +143,4 @@ https://github.com/laravel/framework/blob/4.2/src/Illuminate/Support/Str.php
 
 --------------------------------------------------------------------------------
 Developed by Brad Jones - brad@bjc.id.au
+Now this one maintained by Jingyuan He - hejingyuan199@gmail.com

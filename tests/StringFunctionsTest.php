@@ -11,7 +11,9 @@
 // -----------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////
 
-class StringFunctionsTest extends PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+class StringFunctionsTest extends TestCase
+
 {
 	protected $string = 'This is a string.';
 
@@ -289,14 +291,16 @@ class StringFunctionsTest extends PHPUnit_Framework_TestCase
 		$this->assertEquals('TEST', Gears\String\singular('TESTS'));
 		$this->assertEquals('Deer', Gears\String\singular('Deer'));
 		$this->assertEquals('DEER', Gears\String\singular('DEER'));
-		$this->assertEquals('Criterium', Gears\String\singular('Criteria'));
-		$this->assertEquals('CRITERIUM', Gears\String\singular('CRITERIA'));
+		$this->assertEquals('Criterion', Gears\String\singular('Criteria'));
+		$this->assertEquals('CRITERION', Gears\String\singular('CRITERIA'));
 		$this->assertEquals('child', Gears\String\singular('children'));
 		$this->assertEquals('test', Gears\String\singular('tests'));
 		$this->assertEquals('deer', Gears\String\singular('deer'));
-		$this->assertEquals('criterium', Gears\String\singular('criteria'));
+		$this->assertEquals('criterion', Gears\String\singular('criteria'));
 	}
 
+	//deprecated after Laravel 5.3
+    /*
 	public function testQuickRandom()
 	{
 		$randomInteger = mt_rand(1, 100);
@@ -304,6 +308,7 @@ class StringFunctionsTest extends PHPUnit_Framework_TestCase
 		$this->assertInternalType('string', Gears\String\quickRandom());
 		$this->assertEquals(16, strlen(Gears\String\quickRandom()));
 	}
+    */
 
 	public function testRandom()
 	{

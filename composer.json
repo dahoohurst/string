@@ -11,14 +11,14 @@
 	},
 	"require":
 	{
-		"illuminate/support": "5.*",
+		"illuminate/support": "v5.0.0 - v6.20.31",
 		"patchwork/utf8": "1.*",
 		"neitanod/forceutf8": "~2.0"
 	},
 	"require-dev":
 	{
-		"phpunit/phpunit": "4.*",
+		"phpunit/phpunit": "8.*",
 		"codegyre/robo": "*",
-		"guzzlehttp/guzzle": "4.*"
+		"guzzlehttp/guzzle": "7.*"
 	}
 }
