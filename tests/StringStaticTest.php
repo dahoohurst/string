@@ -292,14 +292,16 @@ class StringStaticTest extends TestCase
 		$this->assertEquals('TEST', Str::singular('TESTS'));
 		$this->assertEquals('Deer', Str::singular('Deer'));
 		$this->assertEquals('DEER', Str::singular('DEER'));
-		$this->assertEquals('Criterium', Str::singular('Criteria'));
-		$this->assertEquals('CRITERIUM', Str::singular('CRITERIA'));
+		$this->assertEquals('Criterion', Str::singular('Criteria'));
+		$this->assertEquals('CRITERION', Str::singular('CRITERIA'));
 		$this->assertEquals('child', Str::singular('children'));
 		$this->assertEquals('test', Str::singular('tests'));
 		$this->assertEquals('deer', Str::singular('deer'));
-		$this->assertEquals('criterium', Str::singular('criteria'));
+		$this->assertEquals('criterion', Str::singular('criteria'));
 	}
 
+    //deprecated after Laravel 5.3
+    /*
 	public function testQuickRandom()
 	{
 		$randomInteger = mt_rand(1, 100);
@@ -307,13 +309,14 @@ class StringStaticTest extends TestCase
 		$this->assertInternalType('string', Str::quickRandom());
 		$this->assertEquals(16, strlen(Str::quickRandom()));
 	}
+    */
 
 	public function testRandom()
 	{
 		$this->assertEquals(16, strlen(Str::random()));
 		$randomInteger = mt_rand(1, 100);
 		$this->assertEquals($randomInteger, strlen(Str::random($randomInteger)));
-		$this->assertInternalType('string', Str::random());
+		$this->assertIsString(Str::random());
 	}
 
 	public function testTitle()

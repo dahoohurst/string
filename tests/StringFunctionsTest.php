@@ -315,7 +315,7 @@ class StringFunctionsTest extends TestCase
 		$this->assertEquals(16, strlen(Gears\String\random()));
 		$randomInteger = mt_rand(1, 100);
 		$this->assertEquals($randomInteger, strlen(Gears\String\random($randomInteger)));
-		$this->assertInternalType('string', Gears\String\random());
+		$this->assertIsString(Gears\String\random());
 	}
 
 	public function testTitle()

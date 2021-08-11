@@ -20,7 +20,7 @@ class StringObjectTest extends TestCase
 
 	public function testFactory()
 	{
-		$this->assertTrue(is_a(Str::s($this->string), 'Gears\String'));
+		$this->assertTrue(is_a(Str::s($this->string), 'Gears\Str'));
 	}
 
 	public function testToString()
@@ -353,12 +353,12 @@ class StringObjectTest extends TestCase
 		$this->assertEquals('TEST', Str::s('TESTS')->singular());
 		$this->assertEquals('Deer', Str::s('Deer')->singular());
 		$this->assertEquals('DEER', Str::s('DEER')->singular());
-		$this->assertEquals('Criterium', Str::s('Criteria')->singular());
-		$this->assertEquals('CRITERIUM', Str::s('CRITERIA')->singular());
+		$this->assertEquals('Criterion', Str::s('Criteria')->singular());
+		$this->assertEquals('CRITERION', Str::s('CRITERIA')->singular());
 		$this->assertEquals('child', Str::s('children')->singular());
 		$this->assertEquals('test', Str::s('tests')->singular());
 		$this->assertEquals('deer', Str::s('deer')->singular());
-		$this->assertEquals('criterium', Str::s('criteria')->singular());
+		$this->assertEquals('criterion', Str::s('criteria')->singular());
 	}
 
 	public function testTitle()
