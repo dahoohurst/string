@@ -20,7 +20,7 @@ Installation via composer is easy:
 	"repositories": [
       {
           "type": "vcs",
-          "url": "https://github.com/hejingyuan199/string"
+          "url": "https://github.com/dahoohurst/string"
       }
   ],
   "require": {

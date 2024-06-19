@@ -11,8 +11,7 @@
 	},
 	"require":
 	{
-		"illuminate/support": "v5.* || v6.*",
-		"patchwork/utf8": "1.*",
+		"illuminate/support": "v5.* || v6.* || v7.*",
 		"neitanod/forceutf8": "~2.0"
 	},
 	"require-dev":

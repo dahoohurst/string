@@ -784,7 +784,12 @@ function parseCallback() { return call_user_func_array('\Illuminate\Support\Str:
  * >   - https://github.com/nicolas-grekas/Patchwork-UTF8/
  */
 
-function isUTF8() { return call_user_func_array('\Patchwork\Utf8::isUtf8', func_get_args()); }
+//function isUTF8() { return call_user_func_array('\Patchwork\Utf8::isUtf8', func_get_args()); }
+function isUtf8($s)
+{
+    return (bool) preg_match('//u', $s); // Since PHP 5.2.5, this also excludes invalid five and six bytes sequences
+}
+
 function fixUTF8() { return call_user_func_array('\ForceUTF8\Encoding::fixUTF8', func_get_args()); }
 function toUTF8() { return call_user_func_array('\ForceUTF8\Encoding::toUTF8', func_get_args()); }
 function toLatin1() { return call_user_func_array('\ForceUTF8\Encoding::toLatin1', func_get_args()); }
