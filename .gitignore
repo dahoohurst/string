@@ -1,2 +1,8 @@
 vendor
 composer.lock
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/php-test-framework.xml
+/.idea/string.iml
+/.idea/vcs.xml
