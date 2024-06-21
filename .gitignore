@@ -6,3 +6,4 @@ composer.lock
 /.idea/php-test-framework.xml
 /.idea/string.iml
 /.idea/vcs.xml
+/.phpunit.result.cache
